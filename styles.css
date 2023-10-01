@@ -1,0 +1,84 @@
+/*fonts*/
+
+@font-face {
+    font-family: 'Centuma';
+    src: url('../fonts/cb/Centuma-Bold.woff2') format('woff2'),
+        url('../fonts/cb/Centuma-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/osr/OpenSans-Regular.woff2') format('woff2'),
+        url('../fonts/osr/OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans Condensed';
+    src: url('../fonts/osli/OpenSans-CondensedLightItalic.woff2') format('woff2'),
+        url('../fonts/osli/OpenSans-CondensedLightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open SansSb';
+    src: url('../fonts/ossb/OpenSans-Semibold.woff2') format('woff2'),
+        url('../fonts/ossb/OpenSans-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open SansB';
+    src: url('../fonts/osb/OpenSans-Bold.woff2') format('woff2'),
+        url('../fonts/osb/OpenSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+.fix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.spacer{
+    position: relative;
+}
+.spacer::after{
+    width: 80px;
+    height: 2px;
+    background-color: #cad6dc;
+    content: "";
+    display: block;
+    clear: both;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.rightfa:hover{
+    font-family: 'Open SansB';
+    font-weight: bold;
+}
+.rflink:hover{
+    background-color: #95adb8 !important;
+    color: #fff !important;
+}
